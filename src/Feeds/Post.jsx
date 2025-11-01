@@ -6,7 +6,7 @@ function Post() {
 
   useEffect(() => {
 
-    fetch('http://localhost:3000/posts')
+    fetch('/api/posts')
       .then((response) =>
         response.json()
       )

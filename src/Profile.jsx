@@ -10,7 +10,7 @@ function Profile() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/Profile")
+      .get("/api/profile")
       .then((data) => setProfile(data.data))
       .catch((err) => console.log(err));
   }, []);
@@ -24,7 +24,7 @@ function Profile() {
 
   const handleUpdate = () => {
     axios
-      .put("http://localhost:3000/Profile", profile)
+      .put("/api/profile", profile)
       .then(() => alert("Profile updated ✅"))
       .catch((err) => console.log(err));
   };

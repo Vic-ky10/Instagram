@@ -13,14 +13,14 @@ function Suggestion() {
    const navigate = useNavigate()
 
   useEffect(() => {
-    fetch('http://localhost:3000/Profile')
+    fetch('/api/profile')
       .then((res) => res.json())
       .then((data) => setProfile(data))
       .catch((err) => console.log(err));
   }, []);
 
   useEffect(() => {
-    fetch('http://localhost:3000/Suggestion')
+    fetch('/api/suggestion')
       .then((res) => res.json())
       .then((data) => setSuggestions(data))
       .catch((err) => console.log(err));
