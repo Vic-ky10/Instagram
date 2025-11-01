@@ -7,9 +7,9 @@ function Sidebar() {
 
   return (
     <div className="sidebar d-flex flex-column justify-content-between p-3">
-      {/* Top Section */}
+
       <div>
-        {/* Logo */}
+   
         <div className="logo mb-4 text-center">
           <img
             src="src/assets/OIP.webp"
@@ -18,7 +18,7 @@ function Sidebar() {
           />
         </div>
 
-        {/* Menu Items */}
+    
         <div className="menu d-flex flex-column gap-3">
           <div className="menu-item"><i className="bi bi-house"></i> Home</div>
           <div className="menu-item"><i className="bi bi-search"></i> Search</div>
@@ -37,7 +37,7 @@ function Sidebar() {
         </div>
       </div>
 
-      {/* Bottom Section */}
+   
       <div className="bottom-menu d-flex flex-column gap-3">
         <div className="menu-item"><i className="bi bi-threads"></i> Threads</div>
         <div className="menu-item"><i className="bi bi-list"></i> More</div>

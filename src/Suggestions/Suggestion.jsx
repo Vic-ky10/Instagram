@@ -53,7 +53,7 @@ function Suggestion() {
           <div className="d-flex justify-content-between align-items-center m-3" key={suggestion.id}>
             <div className="d-flex align-items-center">
               <img className="rounded-circle dps" src={suggestion.userImage} alt="suggestion profile" />
-              <h5 className="ms-3">{suggestion.username}</h5>
+              <h6 className="ms-3">{suggestion.username}</h6>
             </div>
             <button
               className="btn btn-primary btn-sm"

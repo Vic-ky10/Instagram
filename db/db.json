@@ -1,62 +1,61 @@
 {
   "posts": [
-    
-  {
-    "id": "1",
-    "username": "travel_with_me",
-    "userImage": "https://randomuser.me/api/portraits/women/12.jpg",
-    "Location": "Paris, France",
-    "postImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
-    "caption": "Evenings in Paris 🌇✨ #wanderlust #paris",
-    "Likes": 2450,
-    "timestamp": "2023-11-05T09:30:00Z",
-    "comments": [
-      {
-        "username": "adventure_guy",
-        "comment": "Paris looks magical! 😍"
-      },
-      {
-        "username": "photo_lover",
-        "comment": "That lighting tho 🔥"
-      }
-    ]
-  },
-   {
-    "id": "2",
-    "username": "nature_snapper",
-    "userImage": "https://randomuser.me/api/portraits/men/21.jpg",
-    "Location": "Yosemite National Park, USA",
-    "postImage": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca",
-    "caption": "Breathtaking views and tranquil vibes 🌲🏞️ #nature #yosemite",
-    "Likes": 2875,
-    "timestamp": "2024-03-10T08:40:00Z",
-    "comments": [
-      {
-        "username": "adventure_guy",
-        "comment": "Nature at its finest! 👏"
-      },
-      {
-        "username": "hiking_queen",
-        "comment": "This is on my bucket list!"
-      }
-    ]
-  },
-  {
-    "id": "3",
-    "username": "urban_journal",
-    "userImage": "https://randomuser.me/api/portraits/men/52.jpg",
-    "Location": "New York City, USA",
-    "postImage": "https://images.unsplash.com/photo-1464983953574-0892a716854b",
-    "caption": "Skyscrapers and street lights. City never sleeps 🏙️🌃 #NYC #citylife",
-    "Likes": 3341,
-    "timestamp": "2024-04-22T21:55:00Z",
-    "comments": [
-      {
-        "username": "photo_lover",
-        "comment": "Love the night cityscape!"
-      }
-    ]
-  },
+    {
+      "id": "1",
+      "username": "travel_with_me",
+      "userImage": "https://randomuser.me/api/portraits/women/12.jpg",
+      "Location": "Paris, France",
+      "postImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
+      "caption": "Evenings in Paris 🌇✨ #wanderlust #paris",
+      "Likes": 2450,
+      "timestamp": "2023-11-05T09:30:00Z",
+      "comments": [
+        {
+          "username": "adventure_guy",
+          "comment": "Paris looks magical! 😍"
+        },
+        {
+          "username": "photo_lover",
+          "comment": "That lighting tho 🔥"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "username": "nature_snapper",
+      "userImage": "https://randomuser.me/api/portraits/men/21.jpg",
+      "Location": "Yosemite National Park, USA",
+      "postImage": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca",
+      "caption": "Breathtaking views and tranquil vibes 🌲🏞️ #nature #yosemite",
+      "Likes": 2875,
+      "timestamp": "2024-03-10T08:40:00Z",
+      "comments": [
+        {
+          "username": "adventure_guy",
+          "comment": "Nature at its finest! 👏"
+        },
+        {
+          "username": "hiking_queen",
+          "comment": "This is on my bucket list!"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "username": "urban_journal",
+      "userImage": "https://randomuser.me/api/portraits/men/52.jpg",
+      "Location": "New York City, USA",
+      "postImage": "https://images.unsplash.com/photo-1464983953574-0892a716854b",
+      "caption": "Skyscrapers and street lights. City never sleeps 🏙️🌃 #NYC #citylife",
+      "Likes": 3341,
+      "timestamp": "2024-04-22T21:55:00Z",
+      "comments": [
+        {
+          "username": "photo_lover",
+          "comment": "Love the night cityscape!"
+        }
+      ]
+    },
     {
       "id": "4",
       "username": "foodie_delights",
@@ -89,7 +88,6 @@
         }
       ]
     },
-    
     {
       "id": "6",
       "username": "fitness_guru",
@@ -122,14 +120,11 @@
         }
       ]
     }
-   
-
-],
-
+  ],
   "Profile": {
     "id": 1,
     "username": "vicky.v",
-    "userImage": "https://randomuser.me/api/portraits/men/4.jpg"
+    "userImage": "https://randomuser.me/api/portraits/men/17.jpg"
   },
   "Suggestion": [
     {
@@ -140,7 +135,7 @@
     {
       "id": "2",
       "username": "Urban_explorer",
-      "userImage": "https://randomuser.me/api/portraits/men/6.jpg"
+      "userImage": "https://randomuser.me/api/portraits/men/12.jpg"
     },
     {
       "id": "3",
@@ -156,6 +151,31 @@
       "id": "5",
       "username": "Food_craver",
       "userImage": "https://randomuser.me/api/portraits/women/9.jpg"
+    },
+    {
+      "id": "6",
+      "username": "Saitama_anime",
+      "userImage": "https://randomuser.me/api/portraits/men/9.jpg"
+    },
+    {
+      "id": "7",
+      "username": "Tech_geek",
+      "userImage": "https://randomuser.me/api/portraits/men/11.jpg"
+    },
+    {
+      "id": "8",
+      "username": "Book_lover",
+      "userImage": "https://randomuser.me/api/portraits/women/21.jpg"
+    },
+    {
+      "id": "9",
+      "username": "Movie_buff",
+      "userImage": "https://randomuser.me/api/portraits/men/19.jpg"
+    },
+    {
+      "id": "10",
+      "username": "Traveler",
+      "userImage": "https://randomuser.me/api/portraits/women/29.jpg"
     }
   ],
   "stories": [

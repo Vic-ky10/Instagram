@@ -28,10 +28,10 @@ function ViewStory() {
       
       <div>    
          {views ? <div key={views.id} className=' d-flex justify-content-center align-items-center'>
-            <Link to={`http://localhost:5173/story/${Number(id) - 1}/${next}`}><i className="bi bi-arrow-left-circle"></i> </Link>
+            <Link to={`http://localhost:5173/story/${Number(id) - 1}/${next}`}><i className="bi bi-arrow-left-circle " style={{ fontSize: '2.5rem' }}></i> </Link>
                                   
             <img className=' story-image' src={views.storyImage} alt='story' />
-            <Link to={`http://localhost:5173/story/${Number(id) + 1}/${next}`}><i className="bi bi-arrow-right-circle" ></i> </Link>
+            <Link to={`http://localhost:5173/story/${Number(id) + 1}/${next}`}><i className="bi bi-arrow-right-circle" style={{ fontSize: '2.5rem' }} ></i> </Link>
 
          </div> : <p>loading</p>}
       </div>
