@@ -1,15 +1,15 @@
 import React, { useContext } from "react";
 import { FollowersContext } from "./FollowersContext";
 import "./Style-follow.css"
-function FollowersPage() {
-  const { followers, removeFollower } = useContext(FollowersContext);
+ function FollowersPage() {
+   const { followers, removeFollower } = useContext(FollowersContext);
 
   return (
     <div className="followers-page">
-      <div className="d-flex justify-content-between align-items-center mb-4">
+    <div className="d-flex justify-content-between align-items-center mb-4">
         <h3 className="fw-bold">
           Followers{" "}
-          <span className="followers-count">
+      <span className="followers-count">
             {followers.length}
           </span>
         </h3>
@@ -28,26 +28,26 @@ function FollowersPage() {
           >
             <div className="d-flex align-items-center">
               <img
-                className="rounded-circle follower-img"
+           className="rounded-circle follower-img"
                 src={follower.userImage}
                 alt={follower.username}
               />
               <div className="ms-3">
-                <h6 className="mb-0">{follower.username}</h6>
+            <h6 className="mb-0">{follower.username}</h6>
                 <small className="text-muted">@{follower.username}</small>
               </div>
-            </div>
-            <button
+           </div>
+         <button
               className="btn btn-outline-danger btn-sm"
               onClick={() => removeFollower(follower.id)}
             >
               Unfollow
             </button>
           </div>
-        ))
+     ))
       ) : (
         <p className="text-muted text-center">
-          You don’t have any followers yet 😅
+          You don’t have any followers yet 
         </p>
       )}
     </div>
