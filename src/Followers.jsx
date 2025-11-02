@@ -47,7 +47,7 @@ function FollowersPage() {
         ))
       ) : (
         <p className="text-muted text-center">
-          You don’t have any followers yet 😅
+          You don’t have any followers yet 
         </p>
       )}
     </div>

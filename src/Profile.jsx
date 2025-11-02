@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import axios from "axios";
-import { FollowersContext } from "./FollowersContext"; // Import your context
+import { FollowersContext } from "./FollowersContext";
 import './Profile.css'
 
 function Profile() {

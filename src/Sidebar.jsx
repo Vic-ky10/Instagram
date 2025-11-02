@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import './Sidebar.css' // 👈 We'll add custom styles here
+import './Sidebar.css' 
 
 function Sidebar() {
   const navigate = useNavigate()
