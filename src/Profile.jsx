@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useContext } from "react";
 import axios from "axios";
-import { FollowersContext } from "./FollowersContext"; // Import your context
+import { FollowersContext } from "./FollowersContext"; 
 import './Profile.css'
 
 function Profile() {
   const [profile, setProfile] = useState(null);
-  const [activeTab, setActiveTab] = useState("posts"); // Tabs: posts, followers, following
+  const [activeTab, setActiveTab] = useState("posts"); // => active tabs are Tabs: posts, followers, following
   const { followers, removeFollower } = useContext(FollowersContext);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ function Profile() {
   return (
     <div className="profile-container">
       {profile ? (
-        <>
+          <>
           {/* Profile Header */}
           <div className="profile-header text-center my-4">
             <img
@@ -45,15 +45,15 @@ function Profile() {
 
             <div className="d-flex justify-content-center gap-3 my-3">
               <button
-                className={`btn ${
-                  activeTab === "posts" ? "btn-primary" : "btn-outline-primary"
+            className={`btn ${
+              activeTab === "posts" ? "btn-primary" : "btn-outline-primary"
                 }`}
                 onClick={() => setActiveTab("posts")}
               >
                 Posts
-              </button>
+           </button>
               <button
-                className={`btn ${
+               className={`btn ${
                   activeTab === "followers" ? "btn-primary" : "btn-outline-primary"
                 }`}
                 onClick={() => setActiveTab("followers")}
@@ -76,19 +76,19 @@ function Profile() {
               <input
                 className="form-control my-2"
                 type="text"
-                value={profile.username}
+              value={profile.username}
                 name="username"
-                onChange={handleOnChange}
+              onChange={handleOnChange}
                 style={{ maxWidth: "300px" }}
               />
               <input
                 className="form-control my-2"
                 type="text"
-                value={profile.userImage}
+             value={profile.userImage}
                 name="userImage"
-                onChange={handleOnChange}
+            onChange={handleOnChange}
                 style={{ maxWidth: "300px" }}
-              />
+          />
               <button className="btn btn-success" onClick={handleUpdate}>
                 Update Profile
               </button>
@@ -104,27 +104,27 @@ function Profile() {
             {activeTab === "followers" && (
               <div className="followers-tab mt-3">
                 {followers.length > 0 ? (
-                  followers.map((follower) => (
+               followers.map((follower) => (
                     <div
                       className="d-flex justify-content-between align-items-center p-2 border-bottom"
                       key={follower.id}
                     >
                       <div className="d-flex align-items-center">
-                        <img
+                     <img
                           className="rounded-circle follower-img"
                           src={follower.userImage}
                       
                         />
-                        <h6 className="ms-3 mb-0">{follower.username}</h6>
+              <h6 className="ms-3 mb-0">{follower.username}</h6>
                       </div>
                       <button
-                        className="btn btn-outline-danger btn-sm"
+                   className="btn btn-outline-danger btn-sm"
                         onClick={() => removeFollower(follower.id)}
-                      >
+                  >
                         Unfollow
-                      </button>
+                   </button>
                     </div>
-                  ))
+              ))
                 ) : (
                   <p className="text-muted text-center">
                     You don’t have any followers 
@@ -132,16 +132,15 @@ function Profile() {
                 )}
               </div>
             )}
-
             {activeTab === "following" && (
               <div className="text-center text-muted"> No following</div>
             )}
           </div>
         </>
       ) : (
-        <p className="text-center">Loading...</p>
+                 <p className="text-center">Loading...</p>
       )}
-    </div>
+     </div>
   );
 }
 
