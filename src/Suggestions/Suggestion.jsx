@@ -12,12 +12,12 @@ function Suggestion() {
   const [followed, setFollowed] = useState({});
    const navigate = useNavigate()
 
-  useEffect(() => {
-    fetch('/api/profile')
-      .then((res) => res.json())
-      .then((data) => setProfile(data))
-      .catch((err) => console.log(err));
-  }, []);
+        useEffect(() => {
+          fetch('/api/profile')
+            .then((res) => res.json())
+            .then((data) => setProfile(data))
+            .catch((err) => console.log(err));
+        }, []);
 
   useEffect(() => {
     fetch('/api/suggestion')
@@ -27,7 +27,7 @@ function Suggestion() {
   }, []);
 
   const handleFollow = (suggestion) => {
-    addFollower(suggestion);
+         addFollower(suggestion);
     setFollowed((prev) => ({ ...prev, [suggestion.id]: true }));
   };
 
@@ -51,8 +51,8 @@ function Suggestion() {
       {suggestions.length > 0 ? (
         suggestions.map((suggestion) => (
           <div className="d-flex justify-content-between align-items-center m-3" key={suggestion.id}>
-            <div className="d-flex align-items-center">
-              <img className="rounded-circle dps" src={suggestion.userImage} alt="suggestion profile" />
+        <div className="d-flex align-items-center">
+          <img className="rounded-circle dps" src={suggestion.userImage} alt="suggestion profile" />
               <h6 className="ms-3">{suggestion.username}</h6>
             </div>
             <button
