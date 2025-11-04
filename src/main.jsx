@@ -3,7 +3,7 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ViewStory from './Feeds/ViewStory.jsx'
-import Profile from './Profile.jsx'
+import Profile from './SideBar/Profile.jsx'
 import Followers from './Followers.jsx'
 import {FollowersProvider} from './FollowersProvider.jsx'
 

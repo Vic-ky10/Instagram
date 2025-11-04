@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useContext } from "react";
 import axios from "axios";
-import { FollowersContext } from "./FollowersContext";
+import { FollowersContext } from "../FollowersContext";
 import './Profile.css'
 
 function Profile() {
   const [profile, setProfile] = useState(null);
-  const [activeTab, setActiveTab] = useState("posts"); // Tabs: posts, followers, following
+  const [activeTab, setActiveTab] = useState("posts"); 
   const { followers, removeFollower } = useContext(FollowersContext);
 
   useEffect(() => {

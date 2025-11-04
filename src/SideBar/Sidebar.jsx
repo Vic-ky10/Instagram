@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Sidebar.css' 
 
-function Sidebar() {
+function Sidebar( {darkMode ,dark}) {
   const navigate = useNavigate()
 
   return (
@@ -34,6 +34,19 @@ function Sidebar() {
           >
             <i className="bi bi-person-circle"></i> Profile
           </div>
+          <div className="menu-item" onClick={darkMode} style={{ cursor: 'pointer' }}>
+  {dark ? (
+    <>
+      <i className="bi bi-sun-fill"></i> Light Mode
+    </>
+  ) : (
+    <>
+      <i className="bi bi-moon-fill"></i> Dark Mode
+    </>
+  )}
+</div>
+
+          
         </div>
       </div>
 

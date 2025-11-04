@@ -1,14 +1,9 @@
-.w-20{
-    width: 20%;
-}
-.w-30 {
-    width: 30%;
-}
+
 .logo-text {
     width: 100px;
 }
 .story{
-    height: 80px ;
+    height: 90px ;
 }
 .dp{
   width: 42px;
@@ -30,17 +25,19 @@ button {
 }
 
 .gradiant-border {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   display: flex;
+  
   text-align: center;
   justify-content: center;
   border-radius: 50%;
   background: linear-gradient(45deg , #ff00ff , #ff6600 , #ffcc00);
 }
 .story-dp{
-  width: 55px;
-  height: 59px;
+  width: 69px;
+  height: 69px;
+  
  
 
 }
@@ -54,4 +51,3 @@ button {
   height: 100px;
 }
  
-/* Gradient Border for Story */

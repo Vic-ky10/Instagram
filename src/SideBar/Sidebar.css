@@ -1,9 +1,9 @@
 .sidebar {
   width: 250px;
   height: 100vh;
-  border-right: 1px solid #ddd;
+ 
   position: fixed;
-  background-color: #fff;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -34,7 +34,7 @@
 }
 
 .menu-item:hover {
-  background-color: #f0f0f0;
+  background-color: inherit;
   transform: scale(1.02);
   cursor: pointer;
 }
@@ -42,4 +42,6 @@
 .bottom-menu {
   margin-bottom: 20px;
 }
+
+
 

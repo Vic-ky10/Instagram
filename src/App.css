@@ -1,0 +1,105 @@
+.app-container {
+    display: flex;
+    height: 100vh;
+   
+}
+.sidebar-section {
+    width: 15%;
+    border-right :1px solid #ddd;
+}
+.feed-section {
+    width: 55%;
+    overflow-y: auto;
+}
+
+.suggestion-section{
+    width: 30%;
+    border-left: 1px solid #ddd;
+}
+
+.bottom-nav{
+    display: none;
+}
+
+.light-col {
+  background-color: #ffffff
+  ;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.dark-col {
+  background-color: #121212;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+
+
+
+
+/* media queries for tab and  mobile */
+
+@media (max-width: 992px) {
+ 
+  .suggestion-section {
+    display: none;
+  }
+
+  .feed-section {
+    width: 80%;
+  }
+
+  .sidebar-section {
+    width: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .sidebar-section {
+    display: none;
+  }
+
+  .suggestion-section {
+    display: none;
+  }
+
+  .feed-section {
+    width: 100%;
+  }
+
+  /* Bottom Nav */
+
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: inherit;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+  }
+
+  .bottom-nav i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .light-col {
+  background-color: #ffffff
+  ;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.dark-col {
+  background-color: #121212;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+  
+}
