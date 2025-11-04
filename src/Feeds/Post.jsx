@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
+
 function Post() {
 
   const [posts, setPosts] = useState([])
@@ -19,7 +20,7 @@ function Post() {
   return (
     <div>
 
-     
+
 
       {posts.map((post) => (
         <div className='m-3' key={post.id}>
@@ -38,6 +39,7 @@ function Post() {
               <i className="bi bi-heart fs-4"></i>
               <i className="bi bi-chat fs-4"></i>
               <i className="bi bi-send fs-4"></i>
+            
               <i className="bi bi-bookmark fs-4"></i>
             </div>
           </div>

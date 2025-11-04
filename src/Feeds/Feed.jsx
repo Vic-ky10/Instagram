@@ -8,7 +8,7 @@ function Feed() {
   return (
     <div>
       <div className=' story '><Story /></div>
-      <div><Post /> </div>
+      <div> <Post /> </div>
 
     </div>
   )
