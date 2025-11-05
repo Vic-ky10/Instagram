@@ -16,7 +16,7 @@ function Story() {
   let next = 0;
 
   return (
-    <div className='story d-flex  m-3 ms-4' >
+    <div className='story d-flex overflow-y-hidden m-3 ms-4' >
       <div className="d-none">
         {next=stories.length}
       </div>
