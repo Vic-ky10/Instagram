@@ -37,17 +37,50 @@ button {
 .story-dp{
   width: 69px;
   height: 69px;
-  
- 
 
 }
 .story-image{
-  margin: 100px;
+ 
+  margin:50px;
+  margin-top: 100px;  
   width: 550px;
   height: 550px;
+  object-fit: cover; 
+  object-position: center;
 }
 .proflie-pic {
   width: 100px;
   height: 100px;
+}
+.top-left-btn {
+  position: absolute;
+  top: 40px;
+  right: 100px;
+
+}
+.icon{
+  font-size: 35px;
+  color: palevioletred;
+}
+
+@media (max-width: 520px){
+  
+  .story-response{
+    margin: 20px;
+  }
+
+  .story-response img{
+    margin-left: 30px;
+    margin-right: 30px ;
+    width: 70%;
+    height: 65vh;
+  
+  
+  }
+  .story-response .icon {
+    font-size: 20px;
+    
+  }
+
 }
  

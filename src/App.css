@@ -38,24 +38,8 @@
 
 
 
-/* media queries for tab and  mobile */
 
-@media (max-width: 992px) {
- 
-  .suggestion-section {
-    display: none;
-  }
-
-  .feed-section {
-    width: 80%;
-  }
-
-  .sidebar-section {
-    width: 20%;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 520px) {
 
   .sidebar-section {
     display: none;

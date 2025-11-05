@@ -2,12 +2,13 @@ import React, { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import { FollowersContext } from "../FollowersContext";
 import './Profile.css'
+import { useNavigate } from "react-router-dom";
 
 function Profile() {
   const [profile, setProfile] = useState(null);
   const [activeTab, setActiveTab] = useState("posts"); 
   const { followers, removeFollower } = useContext(FollowersContext);
-
+ const navigate = useNavigate()
   useEffect(() => {
     axios
       .get("/api/profile")
@@ -33,8 +34,9 @@ function Profile() {
     <div className="profile-container">
       {profile ? (
           <>
-          {/* Profile Header */}
+        
           <div className="profile-header text-center my-4">
+             <button className='btn btn-outline-danger top-left-btn ms-5'  onClick={() => navigate('/')}>Home</button>
             <img
               className="rounded-circle profile-pic"
               src={profile.userImage}
